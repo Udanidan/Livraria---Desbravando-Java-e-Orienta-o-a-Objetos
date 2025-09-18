@@ -7,12 +7,12 @@ public class CadastroDeLivro {
         autor.cpf = "123.456.789.10";
         
         Livro livro = new Livro();
-        livro.nome = "pequeno principe";
-        livro.descricao = "Livro incrivel";
-        livro.valor = 59.90;
-        livro.codigo = "123-banana";
+        livro.setNome("pequeno principe");
+        livro.setDescricao("Livro incrivel");
+        livro.setValor(59.90);;
+        livro.setCodigo("123-banana");
 
-        livro.autor = autor;
+        livro.setAutor(autor);
 
         livro.infos();
         if(!livro.aplicarDescontoDe(0.1)){
@@ -30,12 +30,12 @@ public class CadastroDeLivro {
         outroautor.cpf = "123.456.789.10";
 
         Livro outrolivro = new Livro();
-        outrolivro.nome = "komi-san can't comunicate";
-        outrolivro.descricao = "Deveras fofinho";
-        outrolivro.valor = 29.90;
-        outrolivro.codigo = "321-nanaba";
+        outrolivro.setNome("komi-san can't comunicate");
+        outrolivro.setDescricao("Deveras fofinho");
+        outrolivro.setValor(29.90);
+        outrolivro.setCodigo("321-nanaba");
         
-        outrolivro.autor = outroautor;
+        outrolivro.setAutor(outroautor);
 
         outrolivro.infos();
     }
