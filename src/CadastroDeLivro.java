@@ -2,11 +2,11 @@ public class CadastroDeLivro {
     public static void main(String[] args) {
 
         Autor autor = new Autor();
-        autor.nome = "Antoine de Saint-Exupéry";
-        autor.email = "Antoine@gmail.com";
-        autor.cpf = "123.456.789.10";
+        autor.setNome("Antoine de Saint-Exupéry");
+        autor.setEmail("Antoine@gmail.com");
+        autor.setCpf("123.456.789.10");
         
-        Livro livro = new Livro();
+        Livro livro = new Livro(autor);
         livro.setNome("pequeno principe");
         livro.setDescricao("Livro incrivel");
         livro.setValor(59.90);;
@@ -25,11 +25,11 @@ public class CadastroDeLivro {
         System.out.println();
 
         Autor outroautor = new Autor();
-        outroautor.nome = "Tomohito Oda";
-        outroautor.email = "Tooda@gmail.com";
-        outroautor.cpf = "123.456.789.10";
+        outroautor.setNome("Tomohito Oda");
+        outroautor.setEmail("Tooda@gmail.com");
+        outroautor.setCpf("123.456.789.10");
 
-        Livro outrolivro = new Livro();
+        Livro outrolivro = new Livro(outroautor);
         outrolivro.setNome("komi-san can't comunicate");
         outrolivro.setDescricao("Deveras fofinho");
         outrolivro.setValor(29.90);

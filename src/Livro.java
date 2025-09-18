@@ -4,10 +4,13 @@ public class Livro {
     private double valor;
     private String codigo;
     private Autor autor;
-    
 
+    public Livro(Autor autor){
+        this();
+        this.autor = autor;
+    }
     public Livro(){
-        System.out.println("Novo livro criado");
+        this.codigo = "000-00-00000-00-0";
     }
 
     void infos() {
