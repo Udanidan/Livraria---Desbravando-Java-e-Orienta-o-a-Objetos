@@ -1,3 +1,4 @@
+// Executa os conceitos de Herança e Polimorfismo na pratica.
 public class RegistroDeVendas {
     public static void main(String[] args) {
         Autor autor = new Autor();

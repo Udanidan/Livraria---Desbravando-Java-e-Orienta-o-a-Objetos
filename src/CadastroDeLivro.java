@@ -1,3 +1,5 @@
+// Aplica os conceitos de classe, objeto,
+// encapsulamento e getters/setters
 public class CadastroDeLivro {
     public static void main(String[] args) {
 

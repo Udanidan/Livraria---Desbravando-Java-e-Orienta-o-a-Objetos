@@ -1,6 +1,10 @@
+// Representa um livro fisico, que é um tipo de livro
+// Essa subclasse também é importante por precisar de regras que só fazem sentido para
+// livros fisicos, como a taxa de impressão.
+
 public class LivroFisico extends Livro {
     public LivroFisico(Autor autor){
-        super(autor);
+        super(autor); // Chama o construtor da Super Classe livro e passa o parametro autor
     }
 
     public void taxaImpressao(){

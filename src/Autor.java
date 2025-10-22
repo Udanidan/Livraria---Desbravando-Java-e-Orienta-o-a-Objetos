@@ -1,8 +1,10 @@
 public class Autor {
+    // Atributos
     private String nome;
     private String email;
     private String cpf;
 
+    // Exibe as informações do objeto
     void infos() {
         System.out.println("informações do autor:");
         System.out.println("nome: " + nome);
@@ -11,7 +13,7 @@ public class Autor {
         System.out.println();
     }
 
-    //getters e setters
+    //getters e setters alteram os atributos fora da classe
     public String getNome() {
         return nome;
     }
