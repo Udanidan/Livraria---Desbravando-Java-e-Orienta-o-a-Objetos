@@ -10,4 +10,13 @@ public class LivroFisico extends Livro {
     public void taxaImpressao(){
         this.setValor(this.getValor()*0.05);
     }
+
+    @Override
+    public boolean aplicarDescontoDe(double porcentagem) {
+        if(porcentagem > 0.3){
+            return false;
+        }
+        setValor(this.getValor() - this.getValor() * porcentagem);
+        return true;
+    }
 }

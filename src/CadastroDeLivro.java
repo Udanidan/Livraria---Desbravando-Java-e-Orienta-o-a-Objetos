@@ -8,7 +8,9 @@ public class CadastroDeLivro {
         autor.setEmail("Antoine@gmail.com");
         autor.setCpf("123.456.789.10");
         
-        Livro livro = new Livro(autor);
+        // Embora seja do tipo livro, é um livro fisico
+        // Afinal um livro fisico É um livro, então pode ser chamado como tal
+        Livro livro = new LivroFisico(autor);
         livro.setNome("pequeno principe");
         livro.setDescricao("Livro incrivel");
         livro.setValor(59.90);;
@@ -31,7 +33,8 @@ public class CadastroDeLivro {
         outroautor.setEmail("Tooda@gmail.com");
         outroautor.setCpf("123.456.789.10");
 
-        Livro outrolivro = new Livro(outroautor);
+        // Ebooks também podem ser referenciados como Livros
+        Livro outrolivro = new Ebook(outroautor);
         outrolivro.setNome("komi-san can't comunicate");
         outrolivro.setDescricao("Deveras fofinho");
         outrolivro.setValor(29.90);

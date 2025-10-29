@@ -5,7 +5,8 @@ public class RegrasDeDesconto {
         Autor autor = new Autor();
         autor.setNome("Rodrigo Turini");
 
-        Livro livro = new Livro(autor);
+        // Devido a abstração não é possivel criar um objeto livro, apenas filhos dele
+        Livro livro = new LivroFisico(autor);
         livro.setValor(59.90);
 
         if(!livro.aplicarDescontoDe(0.30)) {

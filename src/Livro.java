@@ -1,7 +1,10 @@
 // Super Classe ou classe pai
 // Essa classe guarda os atributos e métodos principais de um livro
 
-public class Livro {
+// Agora essa classe é uma classe "Abstrata", ou seja, não pode ser instanciada
+// Isso deve acontecer, pois ela é generica e não representa um tipo de livro
+
+public abstract class Livro {
     // Atributos da nossa classe, são as caracteristicas do objeto
     // Podem ser public, private ou protected
     // O Conceito de encapsulamento consiste em protege-los de fora da classe
@@ -37,14 +40,10 @@ public class Livro {
         System.out.println("-----------------------------");
     }
 
-    public boolean aplicarDescontoDe (double porcentagem) {
-        // limitar o desconto é importante em casos de regra de negocio 
-        if(porcentagem > 0.3){
-            return false;
-        }
-        this.valor -= this.valor * porcentagem;
-        return true;
-    }
+    // Isso é um método abstrato, chamar esse método não faz nada por si só, mas permite polimorfismo
+    // por ser abstrata, obriga o método a ser reescrito nas classes filhas
+    // Pode ser util para manter o polimorfismo e garantir regras de negócio
+    public abstract boolean aplicarDescontoDe (double porcentagem);
 
     boolean temAutor() {
         return this.autor != null;
